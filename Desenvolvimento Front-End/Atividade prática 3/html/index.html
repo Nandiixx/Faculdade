@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Mãos que Transformam: uma ONG que conecta pessoas a ações de educação, acolhimento e cuidado com o meio ambiente.">
+	<title>Mãos que Transformam | Uma rede para fazer o bem</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="layout-sistema">
+	<header class="menu-superior">
+		<div class="container">
+			<a class="marca link-animado" href="index.html">Mãos que Transformam</a>
+			<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<nav class="nav-principal" aria-label="Navegação principal">
+				<ul class="lista-menu" id="menu-principal">
+					<li><a class="link-animado" href="#sobre">Sobre nós</a></li>
+					<li class="menu-dropdown">
+						<button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="submenu-projetos">
+							<span>Projetos</span>
+							<span class="caret">▾</span>
+						</button>
+						<ul class="submenu" id="submenu-projetos">
+							<li><a href="projetos.html#frentes">Frentes</a></li>
+							<li><a href="projetos.html#voluntariado">Voluntariado</a></li>
+							<li><a href="projetos.html#doacoes">Doações</a></li>
+						</ul>
+					</li>
+					<li><a class="link-animado" href="cadastro.html">Cadastro</a></li>
+					<li><a class="link-animado" href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<aside class="mural-avisos">
+		<h2>Áreas de atuação</h2>
+		<ul>
+			<li>Educação</li>
+			<li>Acolhimento</li>
+			<li>Meio ambiente</li>
+		</ul>
+	</aside>
+
+	<main>
+		<section class="container" id="sobre" aria-labelledby="titulo-principal">
+			<div class="grid-12">
+				<div class="col-lg-6 col-md-6 col-12">
+					<p class="texto-introducao">Organização não governamental</p>
+					<h1 id="titulo-principal" class="titulo-boas-vindas">Juntos, o cuidado vira transformação.</h1>
+					<p class="texto-introducao">Conectamos pessoas, ideias e oportunidades para construir uma comunidade mais justa, acolhedora e sustentável.</p>
+					<a class="botao-primario" href="#contato">Fale com a gente</a>
+				</div>
+				<figure class="col-lg-6 col-md-6 col-12">
+					<img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1000&q=85" alt="Mãos de pessoas unidas em um círculo, representando colaboração e solidariedade">
+					<figcaption>Quando cada pessoa participa, o impacto alcança muito mais longe.</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<section class="container" aria-labelledby="titulo-impacto">
+			<h2 id="titulo-impacto" class="titulo-boas-vindas">Onde atuamos</h2>
+			<div class="grid-modulos">
+				<article class="card">
+					<span class="badge badge-primario">Apoio educativo</span>
+					<h3>Educação</h3>
+					<p>Ampliamos o acesso a conhecimento, cultura e novas possibilidades.</p>
+					<a href="#apoio" class="botao-primario apoiar-trigger" data-feedback="modal">Apoiar</a>
+					<div class="alerta alerta-sucesso" role="status">Atividades em andamento</div>
+				</article>
+				<article class="card">
+					<span class="badge badge-sucesso">Rede solidária</span>
+					<h3>Acolhimento</h3>
+					<p>Criamos redes de apoio para que ninguém precise enfrentar desafios sozinho.</p>
+					<a href="#apoio" class="botao-primario apoiar-trigger" data-feedback="toast">Quero apoiar</a>
+					<div class="alerta alerta-aviso" role="alert">Acolhimento com vagas abertas</div>
+				</article>
+				<article class="card">
+					<span class="badge badge-alerta">Preservação ativa</span>
+					<h3>Meio ambiente</h3>
+					<p>Mobilizamos a comunidade para cuidar dos espaços que compartilhamos.</p>
+					<a href="#apoio" class="botao-primario apoiar-trigger" data-feedback="modal">Apoiar</a>
+					<div class="alerta alerta-erro" role="alert">Campanha com demanda elevada</div>
+				</article>
+			</div>
+			<div class="painel-indicadores">
+				<div class="indicador">+1.200 pessoas atendidas</div>
+				<div class="indicador">35 ações realizadas</div>
+				<div class="indicador">12 parceiros ativos</div>
+			</div>
+		</section>
+
+		<section class="container" id="contato" aria-labelledby="titulo-contato">
+			<div class="contato-conteudo">
+				<div>
+					<h2 id="titulo-contato" class="titulo-boas-vindas">Vamos conversar?</h2>
+					<p class="texto-introducao">Quer apoiar uma ação, propor uma parceria ou conhecer melhor nosso trabalho? Entre em contato pelos canais oficiais.</p>
+				</div>
+				<address>
+					<ul>
+						<li><strong>E-mail:</strong> <a href="mailto:contato@maosquetransformam.org">contato@maosquetransformam.org</a></li>
+						<li><strong>Telefone:</strong> <a href="tel:+5511999999999">(11) 99999-9999</a></li>
+						<li><strong>Instagram:</strong> <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">@maosquetransformam</a></li>
+					</ul>
+				</address>
+			</div>
+		</section>
+	</main>
+
+	<div class="toast-container" aria-live="polite" aria-atomic="true">
+		<div class="toast toast-sucesso" role="status">
+			<span>Perfil atualizado com êxito!</span>
+			<button type="button" class="modal-fechar" aria-label="Fechar notificação">×</button>
+		</div>
+	</div>
+
+	<div class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-confirmacao-titulo">
+		<div class="modal-conteudo">
+			<div class="modal-cabecalho">
+				<h3 id="modal-confirmacao-titulo">Confirmação de Apoio</h3>
+				<button type="button" class="modal-fechar" aria-label="Fechar confirmação">×</button>
+			</div>
+			<p>Agradecemos o seu interesse em apoiar os projetos da nossa ONG. Deseja confirmar o registo na atividade selecionada?</p>
+			<div class="modal-rodape">
+				<button type="button" id="confirmar-apoio" class="botao-primario" data-feedback="toast">Confirmar</button>
+			</div>
+		</div>
+	</div>
+
+	<footer class="rodape-responsivo">
+		<div class="container">
+			<p>&copy; 2026 Mãos que Transformam. Todos os direitos reservados.</p>
+		</div>
+	</footer>
+
+	<script>
+		const modal = document.querySelector('.modal-overlay');
+		const toast = document.querySelector('.toast-container');
+		const alerta = document.querySelector('.alerta-aviso');
+		const menuToggle = document.querySelector('.menu-toggle');
+		const navPrincipal = document.querySelector('.nav-principal');
+		const dropdowns = document.querySelectorAll('.menu-dropdown');
+
+		function showModal() {
+			if (modal) modal.classList.add('is-visible');
+		}
+
+		function hideModal() {
+			if (modal) modal.classList.remove('is-visible');
+		}
+
+		function showToast() {
+			if (toast) {
+				toast.classList.add('is-visible');
+				setTimeout(() => toast.classList.remove('is-visible'), 2500);
+			}
+		}
+
+		function showWarning() {
+			if (alerta) {
+				alerta.classList.add('is-visible');
+				setTimeout(() => alerta.classList.remove('is-visible'), 3000);
+			}
+		}
+
+		if (menuToggle && navPrincipal) {
+			menuToggle.addEventListener('click', function () {
+				const isOpen = navPrincipal.classList.toggle('is-open');
+				menuToggle.setAttribute('aria-expanded', String(isOpen));
+			});
+		}
+
+		dropdowns.forEach(function (dropdown) {
+			const button = dropdown.querySelector('.dropdown-toggle');
+			if (!button) return;
+
+			button.addEventListener('click', function () {
+				const isOpen = dropdown.classList.toggle('is-open');
+				button.setAttribute('aria-expanded', String(isOpen));
+			});
+		});
+
+		document.addEventListener('click', function (event) {
+			if (!event.target.closest('.menu-dropdown')) {
+				dropdowns.forEach(function (dropdown) {
+					dropdown.classList.remove('is-open');
+					dropdown.querySelector('.dropdown-toggle')?.setAttribute('aria-expanded', 'false');
+				});
+			}
+		});
+
+		document.querySelectorAll('.apoiar-trigger').forEach(function (button) {
+			button.addEventListener('click', function (event) {
+				event.preventDefault();
+				if (button.dataset.feedback === 'toast') {
+					showToast();
+					showWarning();
+				} else {
+					showModal();
+				}
+			});
+		});
+
+		document.getElementById('confirmar-apoio')?.addEventListener('click', function (event) {
+			event.preventDefault();
+			hideModal();
+			showToast();
+			showWarning();
+		});
+
+		document.querySelectorAll('.modal-fechar').forEach(function (button) {
+			button.addEventListener('click', function () {
+				hideModal();
+				if (toast) toast.classList.remove('is-visible');
+			});
+		});
+	</script>
+</body>
+</html>
